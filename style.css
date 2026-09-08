@@ -1,0 +1,323 @@
+/* --- RESET I BAZOWE STYLE --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333333;
+    line-height: 1.6;
+    background-color: #ffffff;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #333333;
+}
+
+.bg-light {
+    background-color: #fcf6f3; /* Bardzo jasny brzoskwiniowy */
+}
+
+a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* --- PRZYCISKI (BUTTONS) --- */
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.8rem;
+    border-radius: 4px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-gold {
+    background-color: #c9a473; /* Złoty kolor */
+    color: #ffffff;
+}
+
+.btn-gold:hover {
+    background-color: #b59263;
+}
+
+.btn-gold-large {
+    background-color: #c9a473;
+    color: #ffffff;
+    font-size: 1.2rem;
+    padding: 1rem 2.5rem;
+}
+
+.btn-gold-small {
+    background-color: #c9a473;
+    color: #ffffff;
+    padding: 0.6rem 1.4rem;
+}
+
+/* --- NAGŁÓWEK (HEADER) --- */
+header {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 1.2rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-main {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #c9a473;
+}
+
+.logo-sub {
+    font-size: 0.9rem;
+    color: #666;
+    letter-spacing: 1px;
+    margin-top: -3px;
+}
+
+nav ul {
+    display: flex;
+    gap: 1.8rem;
+}
+
+nav a {
+    color: #333333;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #c9a473;
+}
+
+.header-cta .icon-phone {
+    font-size: 1rem;
+    margin-right: 5px;
+}
+
+/* --- SEKCHJA HERO --- */
+#hero {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('img/hero-placeholder.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 6rem 0;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.hero-text {
+    flex: 1;
+    color: #333;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 3.2rem;
+    line-height: 1.2;
+}
+
+.hero-text p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.hero-image {
+    flex: 1;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* --- O KLINICE --- */
+#o-klinice {
+    padding: 6rem 0;
+}
+
+.o-klinice-text-img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+
+.o-klinice-text-img img {
+    border: 4px solid #c9a473;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+/* --- OFERTA --- */
+#oferta {
+    padding: 6rem 0;
+}
+
+.offer-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.offer-category {
+    background-color: #fbf9f7;
+    padding: 2.5rem;
+    border-radius: 8px;
+    border-left: 5px solid #c9a473;
+}
+
+.offer-category h3 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.offer-category ul {
+    list-style: none;
+}
+
+.offer-category li {
+    padding: 0.6rem 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* --- LOKALIZACJE --- */
+#lokalizacje {
+    padding: 6rem 0;
+}
+
+.salons-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+}
+
+.salon-card {
+    background-color: #ffffff;
+    padding: 3rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.salon-card h3 {
+    margin-bottom: 0.8rem;
+}
+
+.map-placeholder {
+    width: 100%;
+    height: 200px;
+    margin: 1.5rem 0;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+/* --- STOPKA / KONTAKT --- */
+footer {
+    background-color: #333333;
+    color: #fcf6f3;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.social-links a img {
+    width: 30px;
+    height: 30px;
+}
+
+.copyright {
+    font-size: 0.8rem;
+    margin-top: 2rem;
+}
+
+/* --- WERSJA MOBILNA --- */
+@media (max-width: 992px) {
+    header .container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    nav ul {
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .hero-content {
+        flex-direction: column;
+    }
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 2rem;
+    }
+    .o-klinice-text-img {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .offer-grid, .salons-grid {
+        grid-template-columns: 1fr;
+    }
+}

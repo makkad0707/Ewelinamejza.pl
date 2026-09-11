@@ -6,102 +6,125 @@
     <title>Ewelina Mejza Clinic</title>
     <link rel="icon" type="image/png" href="img/favicon.png">
     <link rel="stylesheet" href="style.css">
-    <!-- Eleganckie fonty: Cinzel dla nagłówków, Lato dla tekstu -->
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <!-- Biblioteka animacji AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Ikony FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-    <!-- Nawigacja - minimalistyczna -->
-    <nav class="navbar">
+    <!-- Nawigacja -->
+    <nav class="navbar" data-aos="fade-down" data-aos-duration="1000">
         <div class="nav-container">
-            <div class="logo">EWELINA MEJZA</div>
+            <div class="logo">
+                <span class="logo-main">EWELINA MEJZA</span>
+                <span class="logo-sub">CLINIC</span>
+            </div>
             <div class="nav-links">
                 <a href="#o-mnie">O mnie</a>
                 <a href="#oferta">Oferta</a>
                 <a href="#kontakt">Kontakt</a>
-                <a href="https://www.instagram.com/cliniclab.ewelinamejza/" target="_blank">IG</a>
-                <a href="https://www.facebook.com/eveline.salon.urody/?locale=pl_PL" target="_blank">FB</a>
             </div>
         </div>
     </nav>
 
-    <!-- Sekcja Hero ze zdjęciem w tle -->
+    <!-- Pływający przycisk Zadzwoń -->
+    <a href="tel:+48695169827" class="floating-call">
+        <i class="fas fa-phone"></i> Zadzwoń
+    </a>
+
+    <!-- Sekcja Hero (Zdjęcie idealnie w tle) -->
     <header class="hero" id="home">
-        <!-- Tutaj w CSS jest ustawione tło ze zdjęciem -->
-        <div class="hero-content">
-            <h1>Sztuka<br>Kosmetologii</h1>
-            <p>Subtelne podkreślenie Twojego naturalnego piękna.</p>
-            <a href="tel:+48695169827" class="btn-outline">Umów wizytę</a>
+        <div class="hero-content" data-aos="zoom-in" data-aos-duration="1500">
+            <h1>Odkryj Swoje<br>Naturalne Piękno</h1>
+            <p>Zaawansowane terapie estetyczne i kosmetologia na najwyższym poziomie.</p>
+            <a href="tel:+48695169827" class="btn-solid">Umów wizytę</a>
         </div>
     </header>
 
-    <!-- Minimalistyczna sekcja O mnie -->
+    <!-- Sekcja O mnie -->
     <section class="section" id="o-mnie">
         <div class="container text-center">
-            <span class="subtitle">Doświadczenie & Pasja</span>
-            <h2>O MNIE</h2>
-            <div class="divider"></div>
-            <p class="desc-text">
-                Nazywam się Ewelina Mejza. Od ponad 20 lat z pasją i precyzją dbam o piękno oraz zdrowie skóry moich klientek. Specjalizuję się w indywidualnych terapiach łączonych, bezpiecznej medycynie estetycznej oraz zaawansowanej kosmetologii pielęgnacyjnej.
-            </p>
-            <p class="desc-text text-muted">
-                Tytuł "Studio Urody Roku" w plebiscycie Mistrzowie Urody (2022) oraz dziesiątki certyfikatów z zakresu m.in. stymulatorów tkankowych, mezoterapii i makijażu permanentnego to dla mnie motywacja, by oferować usługi na najwyższym poziomie.
-            </p>
+            <h2 data-aos="fade-up">O MNIE I MOIM DOŚWIADCZENIU</h2>
+            <div class="divider" data-aos="fade-up" data-aos-delay="100"></div>
+            
+            <div class="about-card" data-aos="fade-up" data-aos-delay="200">
+                <p class="desc-text">
+                    Nazywam się Ewelina Mejza. Od ponad 20 lat z pasją i precyzją dbam o piękno oraz zdrowie skóry moich klientek. Specjalizuję się w indywidualnych terapiach łączonych, bezpiecznej medycynie estetycznej oraz zaawansowanej kosmetologii pielęgnacyjnej.
+                </p>
+                <div class="achievements">
+                    <h3>🏆 Mistrzowie Urody 2022</h3>
+                    <p><strong>I miejsce</strong> w powiecie leszczyńskim | <strong>II miejsce</strong> w województwie wielkopolskim ("Studio Urody Roku")</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Oferta podzielona na czyste linie -->
+    <!-- Oferta (Nowoczesne, zaokrąglone karty) -->
     <section class="section bg-light" id="oferta">
         <div class="container">
-            <h2 class="text-center">MENU ZABIEGOWE</h2>
-            <div class="divider"></div>
+            <h2 class="text-center" data-aos="fade-up">MENU ZABIEGOWE</h2>
+            <div class="divider" data-aos="fade-up" data-aos-delay="100"></div>
             
-            <div class="offer-list">
-                <div class="offer-item">
+            <div class="offer-grid">
+                <div class="offer-card" data-aos="fade-up" data-aos-delay="100">
                     <h3>Kosmetologia Pielęgnacyjna</h3>
-                    <p>Oczyszczanie wodorowe, Geneo, dobór indywidualnych terapii.</p>
+                    <p>Oczyszczanie wodorowe, Geneo, pełna pielęgnacja dobrana do potrzeb skóry.</p>
                 </div>
-                <div class="offer-item">
-                    <h3>Zaawansowane Terapie Skóry</h3>
+                <div class="offer-card" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Zaawansowane Terapie</h3>
                     <p>Peelingi chemiczne, Dermopeel Heat, mezoterapia mikroigłowa, radiofrekwencja.</p>
                 </div>
-                <div class="offer-item">
-                    <h3>Medycyna Estetyczna & Wolumetria</h3>
-                    <p>Stymulatory tkankowe, kwas polimlekowy, modelowanie ust i twarzy.</p>
+                <div class="offer-card" data-aos="fade-up" data-aos-delay="300">
+                    <h3>Medycyna Estetyczna</h3>
+                    <p>Stymulatory tkankowe, kwas polimlekowy, modelowanie ust i wolumetria twarzy.</p>
                 </div>
-                <div class="offer-item">
+                <div class="offer-card" data-aos="fade-up" data-aos-delay="400">
                     <h3>Zabiegi Specjalne</h3>
-                    <p>Efekt BTX, natychmiastowe zabiegi bankietowe, pełne metamorfozy.</p>
+                    <p>Efekt BTX, zabiegi bankietowe przed wyjściem oraz autorskie metamorfozy.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Minimalistyczny Kontakt -->
-    <footer class="section footer" id="kontakt">
+    <!-- Potężny Kontakt -->
+    <footer class="section footer-mega" id="kontakt">
         <div class="container text-center">
-            <h2>KONTAKT I LOKALIZACJE</h2>
-            <div class="divider"></div>
+            <h2 data-aos="fade-up">UMÓW SIĘ NA WIZYTĘ</h2>
+            <p data-aos="fade-up" data-aos-delay="100" class="contact-subtitle">Zadzwoń bezpośrednio lub napisz do nas w mediach społecznościowych.</p>
             
-            <div class="locations">
-                <div class="location-box">
-                    <h4>Leszno</h4>
-                    <p>Cliniclab Ewelina Mejza<br>ul. Święciechowska 46</p>
-                    <a href="https://share.google/S3K2QAl6pMp5R1kOr" target="_blank" class="link-gold">Jak dojechać?</a>
-                </div>
-                <div class="location-box">
-                    <h4>Szczecin</h4>
-                    <p>MOON HAIR Couture<br>ul. marsz. J. Piłsudskiego 37</p>
-                    <a href="https://maps.app.goo.gl/E9qysMdTbraWaFWaA" target="_blank" class="link-gold">Jak dojechać?</a>
-                </div>
+            <div class="mega-phone" data-aos="zoom-in" data-aos-delay="200">
+                <a href="tel:+48695169827">+48 695 169 827</a>
             </div>
 
-            <div class="footer-cta">
-                <a href="tel:+48695169827" class="phone-big">+48 695 169 827</a>
+            <div class="social-mega" data-aos="fade-up" data-aos-delay="300">
+                <a href="https://www.instagram.com/cliniclab.ewelinamejza/" target="_blank" class="social-icon insta"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/eveline.salon.urody/?locale=pl_PL" target="_blank" class="social-icon fb"><i class="fab fa-facebook-f"></i></a>
             </div>
-            <p class="copyright">© 2026 Ewelina Mejza. Wszelkie prawa zastrzeżone.</p>
+
+            <div class="locations-grid" data-aos="fade-up" data-aos-delay="400">
+                <div class="loc-card">
+                    <h4>LESZNO</h4>
+                    <p>ul. Święciechowska 46</p>
+                    <a href="https://share.google/S3K2QAl6pMp5R1kOr" target="_blank" class="map-link">📍 Prowadź w mapach</a>
+                </div>
+                <div class="loc-card">
+                    <h4>SZCZECIN</h4>
+                    <p>MOON HAIR Couture<br>ul. marsz. J. Piłsudskiego 37</p>
+                    <a href="https://maps.app.goo.gl/E9qysMdTbraWaFWaA" target="_blank" class="map-link">📍 Prowadź w mapach</a>
+                </div>
+            </div>
         </div>
     </footer>
 
+    <!-- Skrypt inicjujący animacje -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true, 
+        offset: 100,
+      });
+    </script>
 </body>
 </html>

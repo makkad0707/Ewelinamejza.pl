@@ -3,192 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ewelina Mejza Clinic | Twoja Droga Do Piękna</title>
-    <!-- Favicona (dodamy ją na końcu) -->
+    <title>Ewelina Mejza Clinic</title>
     <link rel="icon" type="image/png" href="img/favicon.png">
-    <!-- Podpięcie stylu CSS -->
     <link rel="stylesheet" href="style.css">
-    <!-- Podpięcie czcionek Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Eleganckie fonty: Cinzel dla nagłówków, Lato dla tekstu -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Lato:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- NAGŁÓWEK -->
-    <header>
-        <div class="container">
-            <div class="logo">
-                <span class="logo-main">EWELINA MEJZA</span>
-                <span class="logo-sub">CLINIC</span>
+    <!-- Nawigacja - minimalistyczna -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">EWELINA MEJZA</div>
+            <div class="nav-links">
+                <a href="#o-mnie">O mnie</a>
+                <a href="#oferta">Oferta</a>
+                <a href="#kontakt">Kontakt</a>
+                <a href="https://www.instagram.com/cliniclab.ewelinamejza/" target="_blank">IG</a>
+                <a href="https://www.facebook.com/eveline.salon.urody/?locale=pl_PL" target="_blank">FB</a>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="#o-klinice">O KLINICE</a></li>
-                    <li><a href="#oferta">OFERTA</a></li>
-                    <li><a href="#portfolio">PORTFOLIO</a></li>
-                    <li><a href="#lokalizacje">LOKALIZACJE</a></li>
-                    <li><a href="#kontakt">KONTAKT</a></li>
-                </ul>
-            </nav>
-            <div class="header-cta">
-                <a href="tel:+48695169827" class="btn btn-gold btn-header">
-                    <span class="icon-phone">📞</span>
-                    Zadzwoń: +48 695 169 827
-                </a>
-            </div>
+        </div>
+    </nav>
+
+    <!-- Sekcja Hero ze zdjęciem w tle -->
+    <header class="hero" id="home">
+        <!-- Tutaj w CSS jest ustawione tło ze zdjęciem -->
+        <div class="hero-content">
+            <h1>Sztuka<br>Kosmetologii</h1>
+            <p>Subtelne podkreślenie Twojego naturalnego piękna.</p>
+            <a href="tel:+48695169827" class="btn-outline">Umów wizytę</a>
         </div>
     </header>
 
-    <!-- SEKCHJA HERO -->
-    <section id="hero">
-        <div class="container hero-content">
-            <div class="hero-text">
-                <h1>TWOJA DROGA DO PIĘKNA I PEWNOŚCI SIEBIE.</h1>
-                <p>Zaawansowane terapie estetyczne i kosmetologia pielęgnacyjna.</p>
-                <a href="tel:+48695169827" class="btn btn-gold-large">UMÓW WIZYTĘ</a>
-            </div>
-            <div class="hero-image">
-                <!-- Tu wstaw zdjęcie pani Eweliny (np. hero-photo.jpg) -->
-                <img src="img/PaniEwelina.jpg" alt="Ewelina Mejza Clinic">
-            </div>
+    <!-- Minimalistyczna sekcja O mnie -->
+    <section class="section" id="o-mnie">
+        <div class="container text-center">
+            <span class="subtitle">Doświadczenie & Pasja</span>
+            <h2>O MNIE</h2>
+            <div class="divider"></div>
+            <p class="desc-text">
+                Nazywam się Ewelina Mejza. Od ponad 20 lat z pasją i precyzją dbam o piękno oraz zdrowie skóry moich klientek. Specjalizuję się w indywidualnych terapiach łączonych, bezpiecznej medycynie estetycznej oraz zaawansowanej kosmetologii pielęgnacyjnej.
+            </p>
+            <p class="desc-text text-muted">
+                Tytuł "Studio Urody Roku" w plebiscycie Mistrzowie Urody (2022) oraz dziesiątki certyfikatów z zakresu m.in. stymulatorów tkankowych, mezoterapii i makijażu permanentnego to dla mnie motywacja, by oferować usługi na najwyższym poziomie.
+            </p>
         </div>
     </section>
 
-    <!-- O KLINICE -->
-    <section id="o-klinice" class="bg-light">
-        <div class="container o-klinice-content">
-            <h2>O MNIE I MOIM DOŚWIADCZENIU</h2>
-            <div class="about-grid" style="display: grid; grid-template-columns: 1fr; gap: 2rem; max-width: 900px; margin: 0 auto; text-align: center;">
-                
-                <div class="about-text">
-                    <p style="font-size: 1.1rem; margin-bottom: 1.5rem;">
-                        Nazywam się Ewelina Mejza. Z pasją i precyzją dbam o piękno, zdrowie oraz pewność siebie moich klientek. Jestem dyplomowanym kosmetologiem, a moja praktyka opiera się na <strong>ponad 20-letnim doświadczeniu</strong> w branży beauty. Specjalizuję się w indywidualnych terapiach łączonych, które pozwalają osiągnąć naturalne i długotrwałe efekty.
-                    </p>
-                    <p style="font-size: 1.1rem; margin-bottom: 2rem;">
-                        Bezpieczeństwo i najwyższa jakość zabiegów to moje priorytety. W swojej pracy wykorzystuję nowoczesne technologie i sprawdzone preparaty renomowanych marek (m.in. Chantarelle).
-                    </p>
+    <!-- Oferta podzielona na czyste linie -->
+    <section class="section bg-light" id="oferta">
+        <div class="container">
+            <h2 class="text-center">MENU ZABIEGOWE</h2>
+            <div class="divider"></div>
+            
+            <div class="offer-list">
+                <div class="offer-item">
+                    <h3>Kosmetologia Pielęgnacyjna</h3>
+                    <p>Oczyszczanie wodorowe, Geneo, dobór indywidualnych terapii.</p>
                 </div>
-
-                <div class="achievements-box" style="background: #fff; padding: 2.5rem; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); border-top: 4px solid #c9a473; text-align: left;">
-                    <h3 style="color: #c9a473; text-align: center; margin-bottom: 1.5rem; font-size: 1.5rem;">Certyfikaty i Osiągnięcia</h3>
-                    
-                    <p style="margin-bottom: 1rem;"><strong>🏆 Mistrzowie Urody 2022:</strong></p>
-                    <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem; list-style-type: disc;">
-                        <li><strong>I miejsce</strong> w powiecie leszczyńskim</li>
-                        <li><strong>II miejsce</strong> w województwie wielkopolskim w prestiżowej kategorii <strong>"Studio Urody Roku"</strong></li>
-                    </ul>
-
-                    <p style="margin-bottom: 1rem;"><strong>Potwierdzone kwalifikacje (wybrane certyfikaty):</strong></p>
-                    <ul style="padding-left: 1.5rem; list-style-type: disc; line-height: 1.8;">
-                        <li>Zaawansowana Mezoterapia Mikroigłowa (Microneedle Mesotherapy)</li>
-                        <li>Makijaż Permanentny (Permanent Make-up)</li>
-                        <li>Terapie kwasowe i złuszczające (Acid Line)</li>
-                        <li>Obsługa specjalistycznej aparatury kosmetologicznej (m.in. Skin Scrubber)</li>
-                        <li>Zabiegi modelujące sylwetkę (Body Wrap)</li>
-                        <li>Zaawansowane techniki wizażu i makijażu</li>
-                    </ul>
+                <div class="offer-item">
+                    <h3>Zaawansowane Terapie Skóry</h3>
+                    <p>Peelingi chemiczne, Dermopeel Heat, mezoterapia mikroigłowa, radiofrekwencja.</p>
                 </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- OFERTA -->
-    <section id="oferta">
-        <div class="container offer-content">
-            <h2>OFERTA KLINIKI</h2>
-            <div class="offer-grid">
-                <!-- Kategoria 1 -->
-                <div class="offer-category">
-                    <h3>KOSMETOLOGIA PIELĘGNACYJNA</h3>
-                    <ul>
-                        <li>Kosmetologia pielęgnacyjna</li>
-                        <li>Oczyszczanie wodorowe</li>
-                        <li>Geneo</li>
-                    </ul>
+                <div class="offer-item">
+                    <h3>Medycyna Estetyczna & Wolumetria</h3>
+                    <p>Stymulatory tkankowe, kwas polimlekowy, modelowanie ust i twarzy.</p>
                 </div>
-                <!-- Kategoria 2 -->
-                <div class="offer-category">
-                    <h3>ZAAWANSOWANE TERAPIE SKÓRY</h3>
-                    <ul>
-                        <li>Peelingi chemiczne</li>
-                        <li>Dermopeel Heat</li>
-                        <li>Mezoterapia mikroigłowa</li>
-                        <li>Radiofrekwencja mikroigłowa</li>
-                    </ul>
-                </div>
-                <!-- Kategoria 3 -->
-                <div class="offer-category">
-                    <h3>MEDYCYNA ESTETYCZNA & WOLUMETRIA</h3>
-                    <ul>
-                        <li>Stymulatory tkankowe</li>
-                        <li>Kwas polimlekowy</li>
-                        <li>Modelowanie twarzy</li>
-                        <li>Modelowanie ust</li>
-                    </ul>
-                </div>
-                <!-- Kategoria 4 -->
-                <div class="offer-category">
-                    <h3>ZABIEGI SPECJALNE & METAMORFOZY</h3>
-                    <ul>
-                        <li>Zabiegi bankietowe</li>
-                        <li>Efekt BTX</li>
-                        <li>Metamorfozy - indywidualne terapie łączone</li>
-                    </ul>
+                <div class="offer-item">
+                    <h3>Zabiegi Specjalne</h3>
+                    <p>Efekt BTX, natychmiastowe zabiegi bankietowe, pełne metamorfozy.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- LOKALIZACJE -->
-    <section id="lokalizacje" class="bg-light">
-        <div class="container salons-content">
-            <h2>NASZE SALONY</h2>
-            <div class="salons-grid">
-                <!-- Salon Leszno -->
-                <div class="salon-card">
-                    <h3>LESZNO</h3>
-                    <p>Cliniclab Ewelina Mejza,<br> ul. Święciechowska 46.</p>
-                    <div class="map-placeholder">
-                        <img src="img/lesznomapa.png" alt="Mapa salonu w Lesznie">
-                    </div>
-                    <a href="https://maps.app.goo.gl/354d1K3yF66WqC8q8" target="_blank" class="btn btn-gold-small">DOJAZD W LESZNIE</a>
+    <!-- Minimalistyczny Kontakt -->
+    <footer class="section footer" id="kontakt">
+        <div class="container text-center">
+            <h2>KONTAKT I LOKALIZACJE</h2>
+            <div class="divider"></div>
+            
+            <div class="locations">
+                <div class="location-box">
+                    <h4>Leszno</h4>
+                    <p>Cliniclab Ewelina Mejza<br>ul. Święciechowska 46</p>
+                    <a href="https://share.google/S3K2QAl6pMp5R1kOr" target="_blank" class="link-gold">Jak dojechać?</a>
                 </div>
-                <!-- Salon Szczecin -->
-                <div class="salon-card">
-                    <h3>SZCZECIN</h3>
-                    <p>Gabinet w salonie fryzjerskim MOON HAIR Couture,<br> ul. Marszałka Józefa Piłsudskiego 37.</p>
-                    <div class="map-placeholder">
-                        <img src="img/szczecinmapa.png" alt="Mapa salonu w Szczecinie">
-                    </div>
-                    <a href="https://maps.app.goo.gl/N9S8XjM7Sg49999M9" target="_blank" class="btn btn-gold-small">DOJAZD W SZCZECINIE</a>
+                <div class="location-box">
+                    <h4>Szczecin</h4>
+                    <p>MOON HAIR Couture<br>ul. marsz. J. Piłsudskiego 37</p>
+                    <a href="https://maps.app.goo.gl/E9qysMdTbraWaFWaA" target="_blank" class="link-gold">Jak dojechać?</a>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- STOPKA / KONTAKT -->
-    <footer id="kontakt">
-        <div class="container footer-content">
-            <h2>SKONTAKTUJ SIĘ ZE MNĄ</h2>
-            <div class="footer-bottom">
-                <div class="footer-logo">
-                    <span class="logo-main">EWELINA MEJZA</span>
-                    <span class="logo-sub">CLINIC</span>
-                </div>
-                <div class="footer-info">
-                    <p>Pani Ewelina Mejza Clinic</p>
-                    <p>Zadzwoń: +48 695 169 827</p>
-                    <div class="social-links">
-                        <a href="https://www.instagram.com/cliniclab.ewelinamejza/" target="_blank">
-                            <img src="img/instagram.png" alt="Instagram Cliniclab Ewelina Mejza">
-                        </a>
-                        <a href="https://www.facebook.com/eveline.salon.urody/?locale=pl_PL" target="_blank">
-                            <img src="img/facebook.png" alt="Facebook Eveline Salon Urody">
-                        </a>
-                    </div>
-                </div>
-                <p class="copyright">&copy; 2026 EWELINA MEJZA CLINIC.</p>
+            <div class="footer-cta">
+                <a href="tel:+48695169827" class="phone-big">+48 695 169 827</a>
             </div>
+            <p class="copyright">© 2026 Ewelina Mejza. Wszelkie prawa zastrzeżone.</p>
         </div>
     </footer>
 

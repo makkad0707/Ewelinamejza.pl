@@ -45,7 +45,25 @@ a { text-decoration: none; color: inherit; transition: all 0.3s ease; }
 }
 
 /* --- HERO --- */
-.hero { height: 100vh; background: linear-gradient(rgba(26,26,26,0.3), rgba(26,26,26,0.6)), url('img/PaniEwelina.jpg') top center/cover no-repeat; display: flex; align-items: center; justify-content: center; text-align: center; color: #fff; padding: 0 2rem; }
+.hero { 
+    height: 100vh; 
+    /* 1. Definiujemy co jest tłem (gradient + zdjęcie) */
+    background-image: linear-gradient(rgba(26,26,26,0.3), rgba(26,26,26,0.6)), url('img/PaniEwelina.jpg'); 
+    
+    /* 2. Ustawiamy pozycję: środek w poziomie (center) i 15% od góry w pionie */
+    background-position: center 15%; 
+    
+    /* 3. Wymuszamy pokrycie całego ekranu bez powtarzania */
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+    color: #fff; 
+    padding: 0 2rem; 
+}
 .hero-content h1 { color: #fff; font-size: 3.5rem; margin-bottom: 1.5rem; letter-spacing: 1px; }
 .hero-content p { font-size: 1.2rem; margin-bottom: 3rem; max-width: 600px; margin-left: auto; margin-right: auto; }
 .btn-solid { background: var(--gold); color: #fff; padding: 1rem 3rem; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 2px; border-radius: 30px; font-weight: 700; }
@@ -115,6 +133,9 @@ a { text-decoration: none; color: inherit; transition: all 0.3s ease; }
     .hero-content h1 { font-size: 2.5rem; }
     .locations-grid { grid-template-columns: 1fr; gap: 3rem; }
     .floating-call { bottom: 20px; right: 20px; padding: 12px 20px; font-size: 1rem; }
+    .hero { 
+        background-position: center !important; 
+    }
 }
 /* --- DYNAMICZNA OFERTA --- */
 .offer-image-gallery {

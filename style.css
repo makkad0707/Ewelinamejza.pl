@@ -51,7 +51,7 @@ a { text-decoration: none; color: inherit; transition: all 0.3s ease; }
     background-image: linear-gradient(rgba(26,26,26,0.3), rgba(26,26,26,0.6)), url('img/PaniEwelina.jpg'); 
     
     /* 2. Ustawiamy pozycję: środek w poziomie (center) i 15% od góry w pionie */
-    background-position: center 7%; 
+    background-position: center 3%; 
     
     /* 3. Wymuszamy pokrycie całego ekranu bez powtarzania */
     background-size: cover; 

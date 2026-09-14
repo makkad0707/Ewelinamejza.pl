@@ -6,10 +6,8 @@
     <title>Ewelina Mejza Clinic</title>
     <link rel="icon" type="image/png" href="img/favicon.png">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Lato:wght@300;400&display=swap" rel="stylesheet">
-    <!-- Biblioteka animacji AOS -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <!-- Ikony FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -17,14 +15,26 @@
     <!-- Nawigacja -->
     <nav class="navbar" data-aos="fade-down" data-aos-duration="1000">
         <div class="nav-container">
+            <div class="nav-socials">
+                <a href="https://www.instagram.com/cliniclab.ewelinamejza/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/eveline.salon.urody/?locale=pl_PL" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            </div>
             <div class="logo">
                 <span class="logo-main">EWELINA MEJZA</span>
                 <span class="logo-sub">CLINIC</span>
             </div>
-            <div class="nav-links">
-                <a href="#o-mnie">O mnie</a>
-                <a href="#oferta">Oferta</a>
-                <a href="#kontakt">Kontakt</a>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="nav-links" id="nav-links">
+                <a href="#o-mnie" class="nav-item">O mnie</a>
+                <a href="#oferta" class="nav-item">Oferta</a>
+                <a href="#aktualnosci" class="nav-item">Aktualności</a>
+                <a href="#kontakt" class="nav-item">Kontakt</a>
+                <div class="mobile-socials">
+                    <a href="https://www.instagram.com/cliniclab.ewelinamejza/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/eveline.salon.urody/?locale=pl_PL" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                </div>
             </div>
         </div>
     </nav>
@@ -34,76 +44,67 @@
         <i class="fas fa-phone"></i> Zadzwoń
     </a>
 
-    <!-- Sekcja Hero (Zdjęcie idealnie w tle) -->
+    <!-- Sekcja Hero -->
     <header class="hero" id="home">
         <div class="hero-content" data-aos="zoom-in" data-aos-duration="1500">
             <h1>Odkryj Swoje<br>Naturalne Piękno</h1>
             <p>Zaawansowane terapie estetyczne i kosmetologia na najwyższym poziomie.</p>
-            <a href="tel:+48695169827" class="btn-solid">Umów wizytę</a>
+            <a href="#kontakt" class="btn-solid">Umów wizytę</a>
         </div>
     </header>
 
-    <!-- Sekcja O mnie -->
+    <!-- Sekcja O mnie (Renderowana z JS) -->
     <section class="section" id="o-mnie">
         <div class="container text-center">
             <h2 data-aos="fade-up">O MNIE I MOIM DOŚWIADCZENIU</h2>
             <div class="divider" data-aos="fade-up" data-aos-delay="100"></div>
             
             <div class="about-card" data-aos="fade-up" data-aos-delay="200">
-                <p class="desc-text">
-                    Nazywam się Ewelina Mejza. Od ponad 20 lat z pasją i precyzją dbam o piękno oraz zdrowie skóry moich klientek. Specjalizuję się w indywidualnych terapiach łączonych, bezpiecznej medycynie estetycznej oraz zaawansowanej kosmetologii pielęgnacyjnej.
-                </p>
+                <div id="about-content">
+                    <!-- Treść zaciągana dynamicznie -->
+                </div>
                 <div class="achievements">
                     <h3>🏆 Mistrzowie Urody 2022</h3>
-                    <p><strong>I miejsce</strong> w powiecie leszczyńskim | <strong>II miejsce</strong> w województwie wielkopolskim ("Studio Urody Roku")</p>
+                    <p><strong>I miejsce</strong> w powiecie leszczyńskim | <strong>II miejsce</strong> w woj. wielkopolskim ("Studio Urody Roku")</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Oferta (Nowoczesne, zaokrąglone karty) -->
+    <!-- Oferta (Renderowana z JS) -->
     <section class="section bg-light" id="oferta">
         <div class="container">
             <h2 class="text-center" data-aos="fade-up">MENU ZABIEGOWE</h2>
             <div class="divider" data-aos="fade-up" data-aos-delay="100"></div>
             
-            <div class="offer-grid">
-                <div class="offer-card" data-aos="fade-up" data-aos-delay="100">
-                    <h3>Kosmetologia Pielęgnacyjna</h3>
-                    <p>Oczyszczanie wodorowe, Geneo, pełna pielęgnacja dobrana do potrzeb skóry.</p>
-                </div>
-                <div class="offer-card" data-aos="fade-up" data-aos-delay="200">
-                    <h3>Zaawansowane Terapie</h3>
-                    <p>Peelingi chemiczne, Dermopeel Heat, mezoterapia mikroigłowa, radiofrekwencja.</p>
-                </div>
-                <div class="offer-card" data-aos="fade-up" data-aos-delay="300">
-                    <h3>Medycyna Estetyczna</h3>
-                    <p>Stymulatory tkankowe, kwas polimlekowy, modelowanie ust i wolumetria twarzy.</p>
-                </div>
-                <div class="offer-card" data-aos="fade-up" data-aos-delay="400">
-                    <h3>Zabiegi Specjalne</h3>
-                    <p>Efekt BTX, zabiegi bankietowe przed wyjściem oraz autorskie metamorfozy.</p>
-                </div>
-            </div>
+            <!-- Pusty kontener na karty zabiegów -->
+            <div class="offer-grid" id="oferta-container"></div>
         </div>
     </section>
 
-    <!-- Potężny Kontakt -->
+    <!-- Aktualności (Nowa Sekcja - Renderowana z JS) -->
+    <section class="section" id="aktualnosci">
+        <div class="container text-center">
+            <h2 data-aos="fade-up">AKTUALNOŚCI I NOWOŚCI</h2>
+            <div class="divider" data-aos="fade-up" data-aos-delay="100"></div>
+            
+            <!-- Pusty kontener na posty -->
+            <div class="news-grid" id="news-container"></div>
+        </div>
+    </section>
+
+    <!-- Kontakt i Stopka -->
     <footer class="section footer-mega" id="kontakt">
         <div class="container text-center">
             <h2 data-aos="fade-up">UMÓW SIĘ NA WIZYTĘ</h2>
-            <p data-aos="fade-up" data-aos-delay="100" class="contact-subtitle">Zadzwoń bezpośrednio lub napisz do nas w mediach społecznościowych.</p>
+            <div class="divider" style="background-color: #fff;" data-aos="fade-up"></div>
             
-            <div class="mega-phone" data-aos="zoom-in" data-aos-delay="200">
-                <a href="tel:+48695169827">+48 695 169 827</a>
-            </div>
-
-            <div class="social-mega" data-aos="fade-up" data-aos-delay="300">
+            <div class="social-mega" data-aos="fade-up" data-aos-delay="100">
                 <a href="https://www.instagram.com/cliniclab.ewelinamejza/" target="_blank" class="social-icon insta"><i class="fab fa-instagram"></i></a>
                 <a href="https://www.facebook.com/eveline.salon.urody/?locale=pl_PL" target="_blank" class="social-icon fb"><i class="fab fa-facebook-f"></i></a>
             </div>
 
-            <div class="locations-grid" data-aos="fade-up" data-aos-delay="400">
+            <div class="locations-grid" data-aos="fade-up" data-aos-delay="200">
                 <div class="loc-card">
                     <h4>LESZNO</h4>
                     <p>ul. Święciechowska 46</p>
@@ -116,15 +117,111 @@
                 </div>
             </div>
         </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 Ewelina Mejza Clinic. Wszelkie prawa zastrzeżone.</p>
+            <p class="creator">Stworzono przez Maksymilian Kądziołka-Nowak | Kontakt: <a href="mailto:kadziolkanowakmaksymilian@gmail.com">kadziolkanowakmaksymilian@gmail.com</a></p>
+        </div>
     </footer>
 
-    <!-- Skrypt inicjujący animacje -->
+    <!-- Skrypty -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init({
-        once: true, 
-        offset: 100,
-      });
+      AOS.init({ once: true, offset: 50 });
+
+      // Menu Mobilne
+      const hamburger = document.getElementById('hamburger');
+      const navLinks = document.getElementById('nav-links');
+      const navItems = document.querySelectorAll('.nav-item');
+      hamburger.addEventListener('click', () => { navLinks.classList.toggle('active'); hamburger.classList.toggle('active'); });
+      navItems.forEach(item => { item.addEventListener('click', () => { navLinks.classList.remove('active'); hamburger.classList.remove('active'); }); });
+
+      // ==========================================
+    // ==========================================
+      // INTEGRACJA Z DATOCMS
+      // ==========================================
+      const DATOCMS_TOKEN = '479b51b44d18b736b68d4e2b0ba138';
+
+      // Zapytanie GraphQL pobierające wszystkie dane ze stworzonych modeli
+      const query = `
+        {
+          oMnie { opis }
+          allZabiegs { nazwa opis cena zdjecia { url } }
+          allAktualnoscs(orderBy: data_DESC) { tytul data tekst zdjecie { url } }
+        }
+      `;
+
+      fetch('https://graphql.datocms.com/', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json',
+          'Authorization': `Bearer ${DATOCMS_TOKEN}`
+        },
+        body: JSON.stringify({ query }),
+      })
+      .then(res => res.json())
+      .then(res => {
+          const data = res.data;
+
+          // 1. Renderowanie O mnie
+          if (data.oMnie) {
+              document.getElementById('about-content').innerHTML = `<p class="desc-text">${data.oMnie.opis}</p>`;
+          }
+
+          // 2. Renderowanie Oferty
+          const ofertaContainer = document.getElementById('oferta-container');
+          data.allZabiegs.forEach((item, index) => {
+              const card = document.createElement('div');
+              const hasImages = item.zdjecia && item.zdjecia.length > 0;
+              
+              card.className = 'offer-card' + (!hasImages ? ' no-image' : '');
+              card.setAttribute('data-aos', 'fade-up');
+              card.setAttribute('data-aos-delay', (index * 100).toString());
+
+              let imagesHTML = '';
+              if (hasImages) {
+                  const imgs = item.zdjecia.map(img => `<img src="${img.url}" alt="${item.nazwa}">`).join('');
+                  imagesHTML = `<div class="offer-image-gallery">${imgs}</div>`;
+              }
+
+              card.innerHTML = `
+                  ${imagesHTML}
+                  <div class="offer-text">
+                      <h3>${item.nazwa}</h3>
+                      <div class="offer-meta">
+                          <span class="offer-price">${item.cena || 'Brak ceny'}</span>
+                      </div>
+                      <p class="desc">${item.opis || ''}</p>
+                  </div>
+              `;
+              ofertaContainer.appendChild(card);
+          });
+
+          // 3. Renderowanie Aktualności
+          const newsContainer = document.getElementById('news-container');
+          data.allAktualnoscs.forEach((news, index) => {
+              const card = document.createElement('div');
+              const hasImage = news.zdjecie && news.zdjecie.url;
+
+              card.className = 'news-card' + (!hasImage ? ' no-image' : '');
+              card.setAttribute('data-aos', 'fade-up');
+              card.setAttribute('data-aos-delay', (index * 100).toString());
+
+              let imageHTML = hasImage ? `<div class="news-image"><img src="${news.zdjecie.url}" alt="${news.tytul}"></div>` : '';
+
+              card.innerHTML = `
+                  ${imageHTML}
+                  <div class="news-text">
+                      <span class="news-date">${news.data || ''}</span>
+                      <h3>${news.tytul}</h3>
+                      <p>${news.tekst}</p>
+                  </div>
+              `;
+              newsContainer.appendChild(card);
+          });
+      })
+      .catch(error => console.error('Błąd pobierania danych z DatoCMS:', error));
     </script>
 </body>
 </html>
